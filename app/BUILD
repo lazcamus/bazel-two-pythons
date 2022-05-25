@@ -13,7 +13,7 @@ py_binary(
 
 # hello with constraint
 py_binary(
-    name = "hello",
+    name = "hello_39only",
     srcs = ["hello.py"],
     main = "hello.py",
     target_compatible_with = ["//python:python3_9"],
@@ -21,7 +21,7 @@ py_binary(
 
 # hello without constraint
 py_binary(
-    name = "hello_nocompat",
+    name = "hello",
     srcs = ["hello.py"],
     main = "hello.py",
 )
