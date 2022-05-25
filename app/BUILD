@@ -4,8 +4,8 @@ load("@beam_deps//:requirements.bzl", "requirement")
 py_binary(
     name = "example_wordcount",
     srcs = ["example_wordcount.py"],
-    exec_compatible_with = ["//beam:python3_9"],
     main = "example_wordcount.py",
+    target_compatible_with = ["//python:python3_9"],
     deps = [
         requirement("apache-beam"),
     ],
@@ -15,8 +15,8 @@ py_binary(
 py_binary(
     name = "hello",
     srcs = ["hello.py"],
-    exec_compatible_with = ["//beam:python3_9"],
     main = "hello.py",
+    target_compatible_with = ["//python:python3_9"],
 )
 
 # hello without constraint
