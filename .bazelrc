@@ -1,0 +1,2 @@
+build:beam --platforms=//python:linux_aarch64_python3_9
+run --ui_event_filters=-info,-stdout,-stderr --noshow_progress
